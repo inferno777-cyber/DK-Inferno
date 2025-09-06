@@ -4,7 +4,7 @@
 <head>
 		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+		<link rel="stylesheet" href="firststep.css">
 		<title>Hello, World!</title>
 </head>
 <body>
@@ -34,6 +34,142 @@ body{
 }
 .con{
 		border: none;
+		border-radius: 50%;
+		width: 10rem;
+		height: 10rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		background: rgba(253, 253, 253, 0.5);
+}
+.h{
+		border: 1px solid red;
+		font-size: 1.5rem;
+		background: black;
+		color: white;
+		padding: 0.5rem;
+		
+}
+.p1{
+		border: none;
+		background-color: black;
+		color: white;
+}
+.motivate{
+		position: absolute;
+		top: 0;
+		left:0;
+		border-radius: 12px;
+		border: none;
+		background: linear-gradient(30deg,blue,purple);
+		color:white;
+		padding: 0.5rem;
+}
+.pic,.pic1{
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	animation: jojo 1s ease infinite;
+}
+.pic{
+	top: 0;
+	left: 1rem;
+}
+.pic1{
+	top:6rem;
+	right:1rem;
+}
+
+@keyframes jojo {
+	0%{opacity: 0;}
+	20%{opacity: 1;transform: scale(1.1);}
+	30%{opacity: 1;transform: scale(1);}
+	40%{opacity: 1;transform: scale(1.1);}
+	50%{opacity: 1;transform: scale(1);}
+	60%{opacity: 1;transform: scale(1.1);}
+	70%{opacity: 1;transform: scale(1);}
+	80%{opacity: 1;transform: scale(1.1);}
+	90%{opacity: 1;transform: scale(1);}
+	100%{opacity: 1;transform: scale(1.1);}
+}
+
+.vd{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	display: none;
+}
+
+.back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+</style>
+<script>
+let now=new Date();
+let end=new Date("2026-04-30T00:00:00Z");
+
+let show=setInterval(()=>{
+				let now=new Date();
+				let result=Math.floor((end-now)/1000);
+				if(result<=0){
+								clearInterval(show);
+								
+				}else{document.getElementById("h").innerText=result;}
+},1000);
+
+let answer=setInterval(()=>{
+				let start=new Date("2025-09-06T00:00:00Z");
+				let end=new Date();
+				let show=Math.floor((end-start)/1000);
+				document.getElementById("lastsec").innerText=show;
+				if(show===0){
+								clearInterval(answer);
+				}
+},1000);
+
+let audio=new Audio ("https://inferno777-cyber.github.io/audio-demo1/JoJos%20Bizarre%20Adventure%20Part%203%20Stardust%20Crusaders%20Opening%20-%20Stand%20Proud_tv.mp3")
+let motivate=document.getElementById("motivate")
+let pic,pic1;
+let vd=document.getElementById("vd");
+
+motivate.addEventListener("click",function(){
+audio.play();
+
+let pic=document.createElement("img");
+pic.classList.add("pic");
+pic.src="https://inferno777-cyber.github.io/audio-demo1/pngaaa.com-28175.png"
+
+let pic1=document.createElement("img");
+pic1.classList.add("pic1");
+pic1.src="https://inferno777-cyber.github.io/audio-demo1/pngaaa.com-28175.png"
+
+
+document.body.appendChild(pic);
+document.body.appendChild(pic1);
+vd.loop=true;
+		vd.style.display="block";
+vd.play();
+
+audio.addEventListener("ended",function(){
+	if(pic) pic.remove();
+	if(pic1) pic1.remove();
+	vd.pause();
+	vd.style.display="none";
+	})
+})
+
+
+
+</script>
+</html>
 		border-radius: 50%;
 		width: 10rem;
 		height: 10rem;
