@@ -26,8 +26,8 @@ body{
     object-fit: cover;
 }
 .imgcount{
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     padding: 0.3rem;
     background: linear-gradient(30deg,rgba(235, 106, 106, 0.7),rgb(252, 246, 246,0.7));
     border-radius: 1rem;
@@ -39,6 +39,7 @@ body{
 }
 span{
     color: white;
+    font-size:2rem;
 }
 .back{
     position: absolute;
@@ -46,4 +47,5 @@ span{
     height: 100%;
     z-index: -1;
     object-fit:cover;
+
 }
