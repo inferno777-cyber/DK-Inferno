@@ -153,10 +153,10 @@ pic1.src="https://inferno777-cyber.github.io/audio-demo1/pngaaa.com-28175.png"
 
 document.body.appendChild(pic);
 document.body.appendChild(pic1);
-vd.loop=true;
 vd.style.display="block";
 vd.play();
-
+vd.loop=true;
+	
 audio.addEventListener("ended",function(){
 	if(pic) pic.remove();
 	if(pic1) pic1.remove();
