@@ -142,7 +142,7 @@ fcheck();
 
 function mcheck() {
     let now = new Date();
-    let bday = new Date("2000-10-07T00:00:00");
+    let bday = new Date("1968-05-17T08:00:00");
 
     // ဒီနှစ် birthday
     let nextBday = new Date(now.getFullYear(), bday.getMonth(), bday.getDate());
@@ -192,7 +192,7 @@ mcheck();
 
 function ycheck() {
     let now = new Date();
-    let bday = new Date("2000-10-07T00:00:00");
+    let bday = new Date("2009-08-27T22:00:00");
 
     // ဒီနှစ် birthday
     let nextBday = new Date(now.getFullYear(), bday.getMonth(), bday.getDate());
