@@ -9,23 +9,23 @@ body{
     padding-top: 2rem;
     width: 100%;
     height: 100%;
-}
-.countcon{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border: none;
+
+}
+.countcon,.birthdaycon{
+    display: flex;
     width: 25%;
+    flex-direction: column;
+    border: none;
     align-items: center;
     gap: 0.5rem;
 }
-.count{
+.count,.birthday{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.imgcount{
+.imgcount,.imgbirthday{
     width: 7rem;
     height: 7rem;
     padding: 0.3rem;
@@ -37,9 +37,13 @@ body{
 .imgcount:hover{
     transform: scale(1.1);
 }
+
+.imgbirthday:hover{
+    transform: scale(1.1);
+}
 span{
     color: white;
-    font-size:3rem;
+    font-size: 2rem;
 }
 .back{
     position: absolute;
@@ -47,6 +51,4 @@ span{
     height: 100%;
     z-index: -1;
     object-fit:cover;
-
 }
-
