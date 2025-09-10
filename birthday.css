@@ -113,11 +113,15 @@ h1{
 }
 .c2,.c4{
 	animation: fadein 2s ease forwards;
+	animation-delay:0.2s;
+	animation-fill-mode:backwards;
 
 }
 
 .c3,.c5{
 	animation: into 2s ease forwards;
+	animation-delay:0.2s;
+	animation-fill-mode:backwards;
 }
 
 .c4,.c5,.c3,.c2{
@@ -170,7 +174,7 @@ h1{
 		visibility:hidden;
 	}
 	to{
-		transform: translateX(0);
+		transform: none;
 		opacity: 1;
 		visibility:visible;
 	}
@@ -182,9 +186,10 @@ h1{
 		visibility:hidden;
 	}
 	to{
-		transform: translateX(0);
+		transform: none;
 		opacity: 1;
 		visibility:visible;
 	}
 
 }
+
