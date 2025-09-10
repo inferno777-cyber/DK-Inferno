@@ -55,7 +55,6 @@ h1{
 		grid-row-end: 3;
 		background: linear-gradient(rgb(51, 153, 255,0.9),rgba(255,0,0,0.9));
 		border: none;
-		clip-path: path('M 0% 50% Q 50% 0% 100% 50% L 100% 100% L 0% 100% Z');
 }
 
 .c3{
@@ -195,5 +194,6 @@ h1{
 	}
 
 }
+
 
 
