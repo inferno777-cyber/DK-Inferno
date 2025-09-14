@@ -91,7 +91,7 @@ icheck();
 
 function fcheck() {
     let now = new Date();
-    let bday = new Date("1952-09-22T09:00:00");
+    let bday = new Date("1959-09-22T09:00:00");
 
     // ဒီနှစ် birthday
     let nextBday = new Date(now.getFullYear(), bday.getMonth(), bday.getDate());
